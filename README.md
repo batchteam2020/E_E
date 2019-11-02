@@ -20,15 +20,17 @@ Python3, tensorflow-gpu(for gpu) or tensorflow (for cpu)  1.14  ,numpy, opencv .
     ```
     pip install .
     ```
+
+#### download weights and cfg
+    from :  https://pjreddie.com/darknet/yolo/
+    download .weight file inside bin & .cfg inside cfg folder
+           
 #### run the code with default example
 1. 
     ```
    python script.py
     ```
-#### download weights and cfg
-     ```https://pjreddie.com/darknet/yolo/```
-     .weight file inside bin & .cfg inside cfg folder
-        
+
 ## Main file script.py (example : yolo with python using darkflow)
 1)
 ```python
