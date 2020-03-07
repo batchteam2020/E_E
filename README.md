@@ -24,14 +24,20 @@ Python3, tensorflow-gpu(for gpu) or tensorflow (for cpu)  1.14  ,numpy, opencv .
 #### download weights and cfg
     from :  https://pjreddie.com/darknet/yolo/
     download .weight file inside bin & .cfg inside cfg folder
-           
+#### if you need our trained model you can mail us
+    action_model.h5
+    actions_dataset_v0
+    actions_labels_v0
+    
 #### run the code with default example
 1. 
     ```
-   python script.py
+   python actions_model.py
     ```
 
-## Main file script.py (example : yolo with python using darkflow)
+## make file script.py (example : yolo with python using darkflow)
+#### to check yolo model try to copy this code and run it
+
 1)
 ```python
 ## import external dependencies
@@ -82,7 +88,21 @@ cv2.destroyAllWindows()
     label_is_(detected_result,kind )
     (e.g label_is_(result,"person)" will return 1 if it's person)
  ```
+ ### (e.g person_preprocessing.py)
+  #### methods 
+1. folder_to_seq
+ ```
+   which create 16~8 frames sequence from folder that contains about 500 images for the same action
+ ```
 
+2. crop_person
+ ```
+    cut person regoin by roi returned by yolo
+ ```
+3. frames_to_video
+ ```
+    create video from frames
+ ```
 ## Options 
 ```bash
 #using gpu , yolov2 weights
