@@ -28,7 +28,7 @@ Python3, tensorflow-gpu(for gpu) or tensorflow (for cpu)  1.14  ,numpy, opencv .
     action_model.h5
     actions_dataset_v0
     actions_labels_v0
-    
+
 #### run the code with default example
 1. 
     ```
@@ -97,7 +97,7 @@ cv2.destroyAllWindows()
 
 2. crop_person
  ```
-    cut person regoin by roi returned by yolo
+    cut person contour by roi returned by yolo
  ```
 3. frames_to_video
  ```
